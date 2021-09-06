@@ -46,7 +46,9 @@ LOCAL_SHARED_LIBRARIES := \
 	libcutils \
 	liblog \
 	libtinyalsa \
-	libdl
+	libdl \
+	libhardware \
+	libutils
 
 LOCAL_MODULE_TAGS := optional
 
