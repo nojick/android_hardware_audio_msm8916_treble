@@ -34,7 +34,9 @@
 #include <stdbool.h>
 #include <stdlib.h>
 #include <dlfcn.h>
-#include <cutils/log.h>
+#include <unistd.h>
+#include <pthread.h>
+#include <log/log.h>
 #include "audio_hw.h"
 #include "audio_extn.h"
 #include "platform.h"
@@ -372,7 +374,7 @@ int audio_extn_sound_trigger_init(struct audio_device *adev)
     }
 
     snprintf(sound_trigger_lib, sizeof(sound_trigger_lib),
-             "/system/vendor/lib/hw/sound_trigger.primary.%s.so",
+             "/vendor/lib/hw/sound_trigger.primary.%s.so",
               XSTR(SOUND_TRIGGER_PLATFORM_NAME));
 
     st_dev->lib_handle = dlopen(sound_trigger_lib, RTLD_NOW);

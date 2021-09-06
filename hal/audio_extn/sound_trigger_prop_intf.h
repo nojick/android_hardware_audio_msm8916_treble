@@ -20,6 +20,8 @@ enum audio_event_type {
     AUDIO_EVENT_SSR,
     AUDIO_EVENT_NUM_ST_SESSIONS,
     AUDIO_EVENT_READ_SAMPLES,
+    AUDIO_EVENT_DEVICE_CONNECT,
+    AUDIO_EVENT_DEVICE_DISCONNECT,
 };
 
 enum sound_trigger_event_type {
