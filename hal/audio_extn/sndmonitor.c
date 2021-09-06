@@ -46,12 +46,13 @@
 #include <stdlib.h>
 #include <dirent.h>
 #include <unistd.h>
+#include <pthread.h>
 #include <fcntl.h>
 #include <sys/stat.h>
 #include <sys/poll.h>
 #include <cutils/list.h>
 #include <cutils/hashmap.h>
-#include <cutils/log.h>
+#include <log/log.h>
 #include <cutils/str_parms.h>
 #include <ctype.h>
 

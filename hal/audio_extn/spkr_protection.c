@@ -33,7 +33,9 @@
 
 #include <errno.h>
 #include <math.h>
-#include <cutils/log.h>
+#include <unistd.h>
+#include <log/log.h>
+#include <pthread.h>
 #include <fcntl.h>
 #include <dirent.h>
 #include "audio_hw.h"

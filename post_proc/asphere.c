@@ -35,7 +35,8 @@
 #include <unistd.h>
 #include <stdbool.h>
 #include <sys/stat.h>
-#include <cutils/log.h>
+#include <log/log.h>
+#include <pthread.h>
 #include <cutils/list.h>
 #include <cutils/str_parms.h>
 #include <cutils/properties.h>
